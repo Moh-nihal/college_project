@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/appicon"
+        android:label="Service Pro"
+        android:roundIcon="@drawable/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Service_pro_blossom"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".xx"
+            android:exported="false"
+            android:label="@string/title_activity_xx"
+            android:theme="@style/Theme.Service_pro_blossom.NoActionBar" />
+        <service android:name=".LocationService" />
+
+        <activity android:name=".Test" /> <!-- <activity -->
+        <!-- android:name=".Custom_view_services" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".View_services"
+            android:exported="false" />
+
+        <!--        <uses-library android:name="org.apache.http.legacy" />-->
+
+        <activity
+            android:name=".custom_totalbill"
+            android:exported="false" />
+        <activity
+            android:name=".total_bill"
+            android:theme="@style/Theme.AppCompat.Dialog"/>
+        <activity
+            android:name=".user_reg"
+            android:exported="false" />
+        <activity
+            android:name=".view_request"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".custom_view_request" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".custom_view_doubt" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".send_doubt"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".custom_viewexpert" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".custom_viewservice" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".custom_viewfeedback" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".custom_viewcomplaint" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".Custom_viewtips" -->
+        <!-- android:exported="false" /> -->
+        <uses-library android:name="org.apache.http.legacy" />
+<activity android:name=".PaymentActivity"></activity>
+        <activity
+            android:name=".View_expert"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Sendrequest"
+            android:exported="false" />
+        <activity
+            android:name=".viewtips"
+            android:exported="false" />
+        <activity
+            android:name=".sendfeedbackrating"
+            android:exported="false" />
+        <activity
+            android:name=".searchservicecenter"
+            android:exported="false" />
+        <activity
+            android:name=".sendcomplaintviewreply"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
